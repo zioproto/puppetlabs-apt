@@ -29,6 +29,10 @@ class apt::params {
       $distid = 'debian'
       $distcodename = $::lsbdistcodename
     }
+    'Cumulus Linux': {
+      $distid = 'debian'
+      $distcodename = $::lsbdistcodename
+    }
     '': {
       fail('Unable to determine lsbdistid, is lsb-release installed?')
     }
